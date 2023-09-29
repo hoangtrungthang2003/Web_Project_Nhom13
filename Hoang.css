@@ -153,14 +153,19 @@
     height: 30px;
 }
 .khoitong2duoi{
-    width: 1350px;
+    width: 100%;
     font-size: 13px;
     border: 1px solid gray;
     background-color: rgb(241, 241, 241);
     padding-left: 10px;
     
 }
+.khoitong2duoi p{
+    padding-left: 80px;
+    padding-right: 90px;
+}
 .khoitong2duoi a{
+    
     text-decoration: none;
     color: rgb(40, 138, 219);
 }
