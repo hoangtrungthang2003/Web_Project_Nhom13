@@ -61,7 +61,7 @@ ul {
     list-style: none;
 }
 
-ul {
+nav ul, .header-main > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -191,12 +191,12 @@ nav ul li:nth-child(5) i {
     height: auto;
 }
 
-.header-main ul li a i{
+.header-main > ul > li a i{
     font-size: 20px;
     margin-right: 10px;
 }
 
-.header-main ul {
+.header-main > ul {
     margin-top: 10px;
     height: 100%;
     min-height: 50px;
@@ -208,13 +208,13 @@ i.bx.bxs-down-arrow {
     color: #000000b7;
 }
 
-.header-main ul li a span {
+.header-main > ul > li a span {
     font-size: 14px;
     display: flex;    
     align-items: center;
 }
 
-.header-main ul li a {
+.header-main > ul > li a {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -225,3 +225,129 @@ li {
     margin-left: 10px;
 }
 
+
+/* ----------------------------adress form-------------------- */
+
+.adress-form {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.adress-form-content {
+    width: 450px;
+    height: 470px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+.adress-form-content form {
+    padding: 0 40px;
+}
+.adress-form-content h2 {
+    font-size: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-weight: bold;
+}
+.adress-form-content h2 span {
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid #ddd;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.adress-form-content form b {
+    font-size: 16px;
+}
+.adress-form-content form select, .adress-form-content form input {
+    height: 45px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 5px;
+}
+.adress-form-content form button{
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: #F97E0E;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+/* ---------------submenu---------------- */
+.header-main > ul > li {
+    position: relative;
+}
+.submenu {
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 100%;
+    padding: 20px;
+    z-index: 999;
+    border-radius: 5px;
+    display: none;
+}
+
+.header-main ul li:hover .submenu {
+    display: flex;
+}
+
+.submenu ul {
+    width: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu ul li p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    margin-right: 50px;
+}
+
+.submenu ul li {
+    margin: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 6px 0;
+}
+
+.submenu ul li a {
+    font-size: 13px;
+    white-space: nowrap;
+}
+.submenu ul li:hover  a{
+    color: black;
+    font-weight: bold;
+    transition: 0.5;
+}

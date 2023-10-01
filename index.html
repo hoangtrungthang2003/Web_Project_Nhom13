@@ -59,9 +59,10 @@
             <ul>
                 <li id="logo">
                 </li>
-                <li><a href="">
+                <li id="adress-form"><a href="#">
                         <p>Xem giá tồn kho tại: <b>Đà nẵng</b></p><i class='bx bxs-down-arrow'></i>
-                    </a></li>
+                    </a>
+                </li>
                 <li>
                     <form action=""><input type="text" placeholder="Bạn tìm gì ..."><i class='bx bx-search'></i></form>
                 </li>
@@ -76,6 +77,28 @@
                         <div style="line-height: 30px;"><a href="">Game App</a></div>
                     </div>
                 </li>
+                <div class="adress-form">
+                    <div class="adress-form-content">
+                        <h2>Chọn địa chỉ nhận hàng <span id="adress-close">X Đóng</span></h2>
+                        <form action="">
+                            <p>Chọn đầy đủ địa chỉ nhận hàng để biết chính xác thời gian giao</p>
+                            <select name="" id="">
+                                <option value="#">--Chọn địa điểm</option>
+                                <option value="#">Đà nẵng</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="#">--Chọn Quận\Huyện</option>
+                                <option value="#">Đà nẵng</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="#">--Chọn Phường\Xã</option>
+                                <option value="#">Đà nẵng</option>
+                            </select>
+                            <input type="text" placeholder="Số nhà, Tên đường">
+                            <button>Xác nhận</button>
+                        </form>
+                    </div>
+                </div>
             </ul>
         </nav>
         <div class="header-main">
@@ -84,14 +107,97 @@
                 <li><a href=""><i class='bx bx-laptop'></i><span>Laptop</span></a></li>
                 <li><a href=""><i class='bx bx-tab'></i><span>Tablet</span></a></li>
                 <li><a href=""><i class='bx bx-headphone'></i><span>Phụ kiện<i class='bx bxs-down-arrow'></i></span></a>
+                    <div class="submenu">
+                        <ul>
+                            <li>
+                                <p>Phụ kiện di động</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Phụ kiện laptop</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Thiết bị nhà thông minh</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                    </div>
                 </li>
+
                 <li><a href=""><i class='bx bxs-watch-alt'></i><span>Smartwatch</span></a></li>
                 <li><a href=""><i class='bx bxs-watch'></i><span>Đồng hồ</span></a></li>
                 <li><a href=""><i class='bx bx-mobile'></i><span>Máy cũ giá rẻ</span></a></li>
                 <li><a href=""><box-icon name='desktop'></box-icon><span>PC, Máy in</span><i
-                            class='bx bxs-down-arrow'></i></a></li>
-                <li><a href=""><span>Thẻ cào, Sim</span><i class='bx bxs-down-arrow'></i></a></li>
-                <li><a href=""><span>Dịch vụ tiện ích</span><i class='bx bxs-down-arrow'></i></a></li>
+                            class='bx bxs-down-arrow'></i></a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="#">Máy in</a></li>
+                            <li><a href="#">Mực in</a></li>
+                            <li><a href="#">Phụ kiện máy tính</a></li>
+                            <li><a href="#">Máy tính để bàn</a></li>
+                            <li><a href="#">Phần mềm</a></li>
+                            <li><a href="#">Màn hình máy tính</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span>Thẻ cào, Sim</span></a></li>
+                <li><a href=""><span>Dịch vụ tiện ích</span><i class='bx bxs-down-arrow'></i></a>
+                    <div class="submenu" style="left: unset; right: 0;">
+                        <ul>
+                            <li>
+                                <p>Thanh toán hoá đơn</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Tài chính bảo hiểm</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>Tiện ích viễn thông</p>
+                            </li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                            <li><a href="#">Phụ kiện A</a></li>
+                            <li><a href="#">Phụ kiện B</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -255,6 +361,7 @@
             </p>
         </div>
     </div>
+    <script src="Thegioididong.js"></script>
 </body>
 
 </html>
