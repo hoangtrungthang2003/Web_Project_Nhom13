@@ -67,6 +67,11 @@ nav ul, .header-main > ul {
     align-items: center;
 }
 
+.header-main > ul {
+    margin: 0;
+    padding: 0;
+}
+
 nav ul li {
     min-height: 40px;
 }

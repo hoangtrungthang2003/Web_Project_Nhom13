@@ -1,0 +1,119 @@
+.container {
+    width: 1350px;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container .row {
+    width: 100%;
+}
+
+.container  p > a {
+    text-decoration: none;
+    font-size: 14px;
+}
+.container  p {
+    margin: 0;
+    padding: 0;
+}
+.title {
+    padding: 15px 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.title-left {
+    display: flex;
+    align-items: center;
+}
+.title-left h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.title-left li {
+    list-style: none;
+    font-size: 13px;
+    margin-right: 10px;
+    color: #1877F2;
+} 
+
+.title-left button {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 13px;
+    color: #1877F2;
+}
+.title-right {
+    display: flex;
+}
+.title-right > button {
+    font-size: 13px;
+    padding: 5 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #1877F2;
+    border: 0;
+    outline: 0;
+    margin-left: 10px;
+}
+.info-other {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-other a {
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.icon-list {
+    margin-bottom: 20px;
+}
+
+.info-other .icon-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+.info-other .icon-list img:nth-child(1) {
+    border-color: red;
+}
+.baohanh {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.baohanh img {
+    width: 15%;
+    height: 70px;
+}
+.baohanh .top div, .baohanh .bottom div {
+    width: 50%;
+    display: flex;
+    padding: 10px;
+}
+.baohanh p, div {
+    font-size: 15px;
+} 
+.baohanh p span {
+    color: #1877F2;
+}
+
+.baohanh .top {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
