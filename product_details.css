@@ -1,3 +1,4 @@
+/* Khối trái */
 .container {
     width: 1350px;
     min-width: 1200px;
@@ -70,7 +71,7 @@
     align-items: center;
 }
 
-.info-other a {
+.info-other p {
     margin: 20px 0;
     text-decoration: none;
     font-size: 14px;
@@ -90,6 +91,7 @@
 .info-other .icon-list img:nth-child(1) {
     border-color: red;
 }
+/* Phần khối bảo hành */
 .baohanh {
     width: 100%;
     border-radius: 5px;
@@ -116,4 +118,160 @@
     display: flex;
     border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
+}
+
+/* Phần khối phải - giá chi tiết */
+.chi-tiet-gia {
+    width: 100%;
+}
+
+.chi-tiet-gia p {
+    margin: 5px 0; 
+}
+
+.chi-tiet-gia h5 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.chi-tiet-gia h5 b {
+    font-size: 20px;
+    color: #d0021c;
+}
+
+.chi-tiet-gia h5 s {
+    color: #717171;
+}
+
+.chi-tiet-gia h5 span {
+    color: #d0021c;
+}
+
+.chi-tiet-gia button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+    background-color: #fb6e2e;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.chi-tiet-gia p.hotline {
+    width: 100%;
+    text-align: center;
+}
+
+.uu-dai {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.uu-dai h6 {
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-radius: 5px 5px 0 0;
+}
+.uu-dai p {
+    padding: 10px;
+}
+.chi-tiet-gia .diem {
+    display: flex;
+    background-color: #fffbe5;
+    border-radius: 20px;
+    padding: 3px;
+    width: 320px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chi-tiet-gia .diem img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}
+
+/* Khối qr ggplay appstore */
+
+.qr-link {
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qr-link i {
+    font-size: 11px;
+}
+.qr-link-text {
+    text-align: center;
+    font-size: 16px;
+}
+.qr-link-text p {
+    font-size: 15px;
+}
+.qr-link-text h5 img {
+    width: 35px;
+    
+}
+.qr-link .down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+.qr-link .down button {
+    border: 0;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+.qr-link .down button img {
+    width: 100%;
+}
+
+/* Thẻ cấu hình sản phẩm */
+.cau-hinh {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cau-hinh p {
+    margin-bottom: 10px;
+}
+.cau-hinh h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cau-hinh table {
+    width: 100%;
+}
+tr.odd {
+    background-color: #f6f6f6; /* Màu nền cho dòng lẻ */
+}
+
+tr.even {
+    background-color: #ffffff; /* Màu nền cho dòng chẵn */
+}
+table tr td {
+    padding: 10px 10px;
+    font-size: 14px;
+}
+table td:first-child {
+    width: 160px; /* Độ rộng của cột 1 */
+}
+.btn-xemthem {
+    border-radius: 5px;
+    border: 1px solid #1877F2;
+    color: #1877F2;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: unset;
+    align-self: center;
 }
