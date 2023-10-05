@@ -275,3 +275,57 @@ table td:first-child {
     background-color: unset;
     align-self: center;
 }
+.Ttsp a{
+    text-decoration: none;
+    font-size: 21px;
+}
+.Ttsp b{
+    font-size: 21px; 
+}
+.Xemthem{
+    width: 300px;
+    border: 1px solid rgb(47, 128, 237);
+    margin-left: 230px;
+    border-radius: 6px;
+}
+.Xemthem a{
+    margin-left: 100px;
+}
+.Danhgia{
+    margin-top: 50px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 3%;
+    
+}
+.Danhgia h3{
+    padding-top: 30px;
+    padding-left: 30px;
+   
+}
+.Danhgia ul{
+    
+    position: relative;
+    left: -40px;
+}
+.Danhgia li{
+    list-style: none;
+    
+}
+.saotong{
+    display: flex;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.xuongtientrinh{
+    
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.chinhthanhtientrinh{
+    position: relative;
+    top:3px;
+}
+.saotong p{
+    color: rgb(255, 159, 0);
+}
