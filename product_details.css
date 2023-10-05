@@ -4,6 +4,7 @@
     min-width: 1200px;
     margin: 0 auto;
     padding: 0;
+    margin-bottom: 30px;
 }
 
 .container .row {
@@ -328,4 +329,53 @@ table td:first-child {
 }
 .saotong p{
     color: rgb(255, 159, 0);
+}
+.anhdg{
+    display: flex;
+    margin-left: 30px;
+}
+.anhdg img{
+    width: 120px;
+    height: 110px;
+    border-radius: 5%;
+    
+}
+.cmt{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.cmt b{
+    margin-right: 20px;
+}
+.fa-heart{
+    margin-left: 30px;
+}
+.cmt li{
+    margin-top: 7px;
+}
+.cmt img{
+    width: 100px;
+    height: 90px;
+}
+.Chinhhr{
+    width: 650px;
+    margin-left: 30px;
+}
+.Xemdg{
+    display: flex;
+}
+.xemviet{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    margin-right: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.xemviet a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 60px;
 }
