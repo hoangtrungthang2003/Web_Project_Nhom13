@@ -402,6 +402,16 @@ table td:first-child {
 }
 .Bl1{
     margin-left: 30px;
+    
+}
+.Bl1 a{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.Bl1 i{
+    margin-left: 20px;
 }
 .Qtv{
     border: 1px solid rgb(247, 247, 247);
@@ -416,11 +426,25 @@ table td:first-child {
     
     
 }
+.Qtv a{
+    
+margin-left: 30px;   
+    
+    
+}
+
 .Qtv p{
     
     margin: 10px 30px 10px;
 }
 .Bl2{
     margin-left: 30px;
+}
+.Bl2 a{
+    text-decoration: none;
+    color: black;
+}
+.Bl2 i{
+    margin-left: 20px;
 }
 
