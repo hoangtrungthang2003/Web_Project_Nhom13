@@ -379,3 +379,48 @@ table td:first-child {
     font-size: 20px;
     margin-left: 60px;
 }
+
+.Bl{
+    position: relative;
+    top:40px;
+    border: 1px solid rgb(228, 228, 228); 
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.Blt b{
+    font-size: 20px;
+    margin-left: 30px;
+}
+.Bl input   {
+    position: relative;
+    
+    width: 700px;
+    height:130px ;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+}
+.Bl1{
+    margin-left: 30px;
+}
+.Qtv{
+    border: 1px solid rgb(247, 247, 247);
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.Qtv b{
+    position: relative;
+    top:10px;
+    margin-left: 30px;
+    
+    
+}
+.Qtv p{
+    
+    margin: 10px 30px 10px;
+}
+.Bl2{
+    margin-left: 30px;
+}
+
