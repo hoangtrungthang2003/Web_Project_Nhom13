@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="we1.css">
+</head>
+<body>
+    <select name="watchKind" id="loaiDongho" onchange="filterProducts()">Loại đồng hồ: 
+        <option value="Tất cả" name="All">Tất cả</option>
+        <option value="chongNuoc" id="chongNuoc">Chống nước</option>
+        <option value="theThao" id="theThao">Thể thao</option>
+        <option value="phoBien" id="phoBien">Phổ biến</option>
+        <option value="banChay" id="banChay">Bán chạy</option>
+    </select>
+    <script>
+        function filterProducts() {
+            const selectElement = document.getElementById("loaiDongho");
+            const selectedOption = selectElement.value;
+            const productElements = document.querySelectorAll(".product");
+
+            productElements.forEach((product) => {
+                const productId = product.querySelector("img").id;
+
+                // If the selected option is "Tất cả" or matches the product's ID, show the product; otherwise, hide it.
+                if (selectedOption === "Tất cả" || selectedOption === productId) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        }
+    </script>
+    <div class="KhungProducts">
+         
+        <div class="product">
+            <a href="">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/287018/citizen-nj0150-81e-nam-thumb-600x600.jpg" alt="" id="phoBien">
+            <p>Đồng hồ CITIZEN Mechanical Tsuyosa 40 mm Nam NJ0150-81E</p>
+            <p><span class="sale">11.180.000₫<sup>₫</sup></span> -40%</p>
+            <p class="price">6.708.000<sup>đ</sup></p></a>
+            <p >Điểm đánh giá:<span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <ul>
+                <li>Loại máy: Cơ tự động</li>
+                <li>Độ mỏng mặt: 11.7 mm</li>
+                <li>Chất liệu mặt kính: Kính Sapphire</li>
+            </ul>
+        </div>
+        <div class="product">
+            <a href="">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/200935/citizen-nh8350-08e-den-2-600x600.jpg" alt="" id="banChay">
+            <p>Đồng hồ CITIZEN Mechanical 40 mm Nam NH8350-08E </p>
+            <p><span class="sale">5.585.000<sup>₫</sup></span> -40%</p>
+            <p class="price">3.351.000<sup>đ</sup></p></a>
+            <p >Điểm đánh giá:<span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <ul>
+                <li>Loại máy: Cơ tự động</li>
+                <li>Độ mỏng mặt: 11.2mm </li>
+                <li>Chất liệu mặt kính: Kính khoáng Mineral</li>
+            </ul>
+        </div>
+        <div class="product">
+            <a href="">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/201666/citizen-em0687-89p-1-2-600x600.jpg" alt="" id="theThao">
+            <p>Đồng hồ CITIZEN 27 mm Nữ EM0687-89P </p>
+            <p><span class="sale">6.090.000<sup>₫</sup></span> -70%</p>
+            <p class="price">1.790.000<sup>đ</sup></p></a>
+            <p >Điểm đánh giá:<span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <ul>
+                <li>Loại máy: Năng lượng ánh sáng</li>
+                <li>Độ mỏng mặt: 9 mm</li>
+                <li>Chất liệu mặt kính: Kính khoáng Mineral</li>
+            </ul>
+        </div>
+        <div class="product">
+            <a href="">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/206149/citizen-em0502-86p-nu-1-1-600x600.jpg" alt="" id="theThao">
+            <p>Đồng hồ CITIZEN 32 mm Nữ EM0502-86P</p>
+            <p><span class="sale">6.090.000<sup>₫</sup></span> -60%</p>
+            <p class="price">2.390.000<sup>đ</sup></p></a>
+            <p >Điểm đánh giá:<span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <ul>
+                <li>Loại máy: Năng lượng ánh sáng</li>
+                <li>Độ mỏng mặt: 7 mm</li>
+                <li>Chất liệu mặt kính: Kính khoáng Mineral</li>
+            </ul>
+        </div>
+        <div class="product">
+            <a href="">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/201753/dong-ho-nu-citizen-el3041-87x-trang-1-1-org.jpg" alt="" id="chongNuoc">
+            <p>Đồng hồ CITIZEN 31.2 mm Nữ EL3041-87X</p>
+            <p><span class="sale">3.360.000<sup>₫</sup></span> -36%</p>
+            <p class="price">2.016.000<sup>đ</sup></p></a>
+            <p >Điểm đánh giá:<span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <ul>
+                <li>Loại máy: Pin (Quazt)</li>
+                <li>Độ mỏng mặt: 7.5 mm</li>
+                <li>Chất liệu mặt kính: Kính khoáng Mineral</li>
+            </ul>
+        </div>
+        <div class="product">
+            <a href="">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/202718/citizen-eq9065-50e-nu-glr-1-org.jpg" alt="" id="chongNuoc">
+            <p>Đồng hồ Nữ Citizen EQ9065-50E </p>
+            <p><span class="sale">4.785.000<sup>₫</sup></span> -40%</p>
+            <p class="price">2.871.000<sup>đ</sup></p></a>
+            <p >Điểm đánh giá:<span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <ul>
+                <li>Loại máy: Pin (Quazt)</li>
+                <li>Độ mỏng mặt: 7.4 mm</li>
+                <li>Chất liệu mặt kính: Kính khoáng Mineral</li>
+            </ul>
+        </div>
+        <div class="product">
+            <a href="">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/199592/g-shock-ga-100cf-1a9dr-den-600x600.jpg" alt="" id="chongNuoc">
+            <p>Đồng hồ G-SHOCK 50.8 mm Nam GA-100CF-1A9DR </p>
+            <p><span class="sale">4.145.000<sup>₫</sup></span> -45%</p>
+            <p class="price">2.279.000<sup>đ</sup></p></a>
+            <p >Điểm đánh giá:<span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <ul>
+                <li>Loại máy: Pin (Quazt)</li>
+                <li>Độ mỏng mặt: 16.5mm </li>
+                <li>Chất liệu mặt kính: Kính khoáng Mineral</li>
+            </ul>
+        </div>
+        <div class="product">
+            <a href="">
+            <img src="https://cdn.tgdd.vn/Products/Images/7264/289339/g-shock-ga-2100-1a1dr-nam-1-600x600.jpg" alt="" id="chongNuoc">
+            <p>Đồng hồ G-SHOCK 51.2 mm Nam GA-100GBX-1A4DR</p>
+            <p><span class="sale">3.751.000<sup>₫</sup></span> -45%</p>
+            <p class="price">2.063.000<sup>đ</sup></p></a>
+            <p >Điểm đánh giá:<span class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</span> </p>
+            <ul>
+                <li>Loại máy: Pin (Quazt)</li>
+                <li>Độ mỏng mặt: 16.9mm </li>
+                <li>Chất liệu mặt kính: Kính khoáng Mineral</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
