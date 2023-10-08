@@ -1,0 +1,132 @@
+
+body {
+    background: #f0f0f0;
+}
+.card2 {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.listCard {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+
+.listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #000000;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCard li img{
+    width: 90%;
+}
+.listCard li button{
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+.listCard li .name-pro {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.name-pro h4 {
+    margin: 0;
+}
+
+.name-pro .color {
+    color: blue;
+    display: flex;
+}
+.top-content p {
+    color: blue;
+}
+
+.top-content {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.card2 > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #f0f0f0;
+}
+
+.card-bottom div {
+    height: 30px;;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-bottom form {
+    margin: 20px 0;
+    align-self: start;
+    display: flex;
+    align-items: center;
+}
+.card-bottom button{
+    width: 95%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.card-bottom .btn-dathang {
+    background: linear-gradient(180deg,#f79429,#f7712e);
+    color: white;
+    border: 0;
+    font-size: 16px;
+}
+.card-bottom .price-text {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-bottom .btn-tragop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    background-color: unset;
+    border: 1px solid blue;
+    
+}
+.card-bottom .btn-tragop span {
+    font-size: 11px;
+    font-weight: normal;
+}
