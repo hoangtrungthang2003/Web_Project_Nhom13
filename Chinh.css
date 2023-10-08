@@ -15,10 +15,11 @@
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid-item > a {
-    display: block;
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -29,7 +30,7 @@
 }
 .product {
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 .product:hover > img{
@@ -74,6 +75,13 @@
     margin: 0;
     padding: 0;
     margin-right: 10px;
+}
+.product-btn {
+    position: relative;
+    height: auto;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .product-text li:nth-child(4) {

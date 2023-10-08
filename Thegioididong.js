@@ -118,11 +118,13 @@ function initApp(){
                         <li>${value.price.toLocaleString()}<sup>đ</sup></li>
                         <li id="stars-container-${key}">
                         </li>
-                        <li><button><i class="fa-solid fa-circle-plus" style="color: #0400ff;"></i> so sánh</button>
-                        </li>
                     </div>
                 </div>
             </a>
+            <div class = "product-btn">
+                <button><i class="fa-solid fa-circle-plus" style="color: #0400ff;"></i> so sánh</button>
+                <button onclick="addToCard(${key})">Add To Card</button>
+            </div>
                         `;
         list.appendChild(newDiv);
         let starsContainer = document.getElementById(`stars-container-${key}`);
@@ -141,3 +143,79 @@ function initApp(){
     })
 }
 initApp();
+
+// Giỏ hàng
+let quantity = document.querySelector('.quantity');
+let total = document.querySelector('.total');
+let listCard = document.querySelector('.listCard');
+let body = document.querySelector('body');
+let openShopping = document.querySelector('.shopping');
+let closeShopping = document.querySelector('.closeShopping');
+
+
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.shopping');
+
+    if (window.scrollY > 100) { // Chuyển sang kiểu fixed sau khi cuộn xuống 300px
+        element.style.position = 'fixed';
+        element.style.top = '30px';
+        element.style.right = '0';
+        element.style.backgroundColor = '#FFAC0A99';
+    } else {
+        element.style.position = 'relative'; // Trở lại kiểu relative khi cuộn lên trên
+        element.style.top = 'unset';
+        element.style.right = 'unset';
+    }
+});
+
+
+openShopping.addEventListener('click', ()=>{
+    body.classList.add('active');
+})
+closeShopping.addEventListener('click', ()=>{
+    body.classList.remove('active');
+})
+
+let listCards  = [];
+
+function addToCard(key){
+    if(listCards[key] == null){
+        // copy product form list to list card
+        listCards[key] = JSON.parse(JSON.stringify(products[key]));
+        listCards[key].quantity = 1;
+    }
+    reloadCard();
+}
+function reloadCard(){
+    listCard.innerHTML = '';
+    let count = 0;
+    let totalPrice = 0;
+    listCards.forEach((value, key)=>{
+        totalPrice = totalPrice + value.price;
+        count = count + value.quantity;
+        if(value != null){
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img src="images/products/${value.image}"/></div>
+                <div>${value.name}</div>
+                <div>${value.price.toLocaleString()}</div>
+                <div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCard.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice.toLocaleString();
+    quantity.innerText = count;
+}
+function changeQuantity(key, quantity){
+    if(quantity == 0){
+        delete listCards[key];
+    }else{
+        listCards[key].quantity = quantity;
+        listCards[key].price = quantity * products[key].price;
+    }
+    reloadCard();
+}
