@@ -50,6 +50,7 @@
     display: flex;
     flex-wrap: wrap;
     
+    
 }
 .bodershow img{
     display: flex;
@@ -63,6 +64,23 @@
     width: 650px;
     display: flex;
     flex-wrap: wrap;
+}
+.bodershow2{
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bodershow3{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bodershow4{
+    
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 /* Style cho dropdown container */
 .dropdown {
@@ -91,6 +109,7 @@
     min-width: 160px;
     z-index: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
   }
   
   /* Style cho các mục trong dropdown */
@@ -120,8 +139,10 @@
     color: black;
   }
 .tong3{
+    width: auto;
     margin-top: 20px;
     display: flex;
+    width: 1350px;
     
 }
 .tong3 a {
