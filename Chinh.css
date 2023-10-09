@@ -1,4 +1,5 @@
 
+/* Sản phẩm - Thắng, Chính */
 .content-main {
     width: 1350px;
     margin: 30px auto;
@@ -101,4 +102,70 @@
     background-color: #00000000;
     color: blue;
     align-items: center;
+}
+
+
+/* Xem thêm - Chính */
+
+.noiDungBiAn{
+    width: 60%;
+    margin: 10px auto;
+}
+.noiDungBiAn .content{
+    display: none;
+}
+.noiDungBiAn tr{
+    text-align: center;
+}
+.noiDungBiAn table{
+    width: 100%;
+}
+.noiDungBiAn p,
+.noiDungBiAn img,
+.noiDungBiAn h1,
+.noiDungBiAn h4,
+.noiDungBiAn h2,
+.noiDungBiAn button,
+.noiDungBiAn table {
+    margin-top: 10px;
+}
+.noiDungBiAn button{
+    border: 0;
+    color: blue;
+    background-color: aqua;
+    width: 90px;
+}
+.noiDungBiAn img{
+    width: 100%;
+}
+.noiDungBiAn a{
+    text-decoration: none;
+}
+.noiDungChinh{
+    background-color: aquamarine;
+    height: fit-content;
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+.noiDungChinh .an ul li{
+    margin-left: 60px;
+}
+ 
+.noiDungChinh .an a:hover{
+    text-decoration: underline;
+}
+.an{
+    display: none;
+    background-color: aquamarine;
+    bottom: 1;
+}
+.noiDungChinh button {
+    background-color: aquamarine;
+}
+
+.bangsolieu th,
+.bangsolieu td {
+    border: 1px solid;
 }
