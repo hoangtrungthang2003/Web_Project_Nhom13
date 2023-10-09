@@ -129,6 +129,10 @@
 .chi-tiet-gia p {
     margin: 5px 0; 
 }
+.chi-tiet-gia a {
+    text-decoration: none; 
+    color: white;
+}
 
 .chi-tiet-gia h5 {
     font-size: 16px;
