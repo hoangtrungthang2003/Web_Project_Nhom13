@@ -219,3 +219,35 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+
+// Phần xem thêm
+
+function hienThi(){
+    var button = document.getElementById("^");
+    var content = document.getElementById("antt");
+
+    if(content.style.display === "none" || content.style.display === ""){
+        content.style.display = "block";
+        button.innerHTML = "Ẩn";
+    }
+    else{
+        content.style.display = "none";
+        button.innerHTML = "Xem thêm";
+    }
+}
+
+var content = document.getElementById("content");
+var xemThemButton = document.getElementById("xemThem");
+var thuGonButton = document.getElementById("thuGon");
+
+function toggleContent() {
+    content.style.display = "block";
+    xemThemButton.style.display = "none";
+    thuGonButton.style.display = "block";
+}
+
+function hiden() {
+    content.style.display = "none";
+    xemThemButton.style.display = "block";
+    thuGonButton.style.display = "none";
+}

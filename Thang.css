@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-li a {
+.header li a {
     color: #000;
     text-decoration: none;
     margin: 0;
@@ -37,7 +37,7 @@ li a {
     padding: 10px 0 0 0;
 }
 
-nav {
+.header nav {
     max-width: 1350px;
     min-width: 900px;
     margin: auto;
@@ -55,13 +55,13 @@ nav {
     background-size: 310px 257px;
 }
 
-ul {
+.header ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav ul, .header-main > ul {
+.header nav ul, .header-main > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,40 +72,41 @@ nav ul, .header-main > ul {
     padding: 0;
 }
 
-nav ul li {
+.header nav ul li {
     min-height: 40px;
 }
 
-nav ul {
+.header nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-nav ul li, a {
+.header nav ul li,
+.header nav ul a {
     color: #000;
     font-size: 12px;
 }
 
-nav ul li:nth-child(2) {
+.header nav ul li:nth-child(2) {
     background-color: #FFAC0A99;
     border-radius: 5px;
     padding: 3px 10px;
     min-width: 12%;
 }
 
-nav ul li:nth-child(2) a {
+.header nav ul li:nth-child(2) a {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 34px;
 }
 
-nav ul li:nth-child(2) a p b {
+.header nav ul li:nth-child(2) a p b {
     margin-top: 3px;
 }
 
-nav ul li:nth-child(2) p {
+.header nav ul li:nth-child(2) p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -114,13 +115,13 @@ nav ul li:nth-child(2) p {
     height: 100%;
 }
 
-nav ul li:nth-child(3) {
+.header nav ul li:nth-child(3) {
     position: relative;
     width: 20%;
     min-width: 160px;
 }
 
-nav ul li:nth-child(3) input {
+.header nav ul li:nth-child(3) input {
     height: 35px;
     width: 100%;
     border-radius: 5px;
@@ -129,7 +130,7 @@ nav ul li:nth-child(3) input {
     padding-left: 10px;
 }
 
-nav ul li:nth-child(3) i {
+.header nav ul li:nth-child(3) i {
     position: absolute;
     font-size: 20px;
     right: 12px;
@@ -137,7 +138,7 @@ nav ul li:nth-child(3) i {
     cursor: pointer;
 }
 
-nav ul li:nth-child(4) {
+.header nav ul li:nth-child(4) {
     background-color: #FFAC0A99;
     border-radius: 5px;
     padding: 5px;
@@ -170,7 +171,7 @@ nav ul li:nth-child(4) {
     margin-bottom: 0;
 }
 
-nav ul li:nth-child(5) i {
+.header nav ul li:nth-child(5) i {
     font-size: 25px;
     cursor: pointer;
 }
@@ -211,7 +212,7 @@ nav ul li:nth-child(5) i {
     min-height: 50px;
 }
 
-i.bx.bxs-down-arrow {
+.header i.bx.bxs-down-arrow {
     font-size: 10px;
     margin-left: 8px;
     color: #000000b7;
