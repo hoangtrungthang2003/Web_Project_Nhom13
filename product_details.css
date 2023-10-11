@@ -114,7 +114,10 @@
 .baohanh p span {
     color: #1877F2;
 }
-
+.baohanh div p {
+    margin: 0 10px;
+    padding: 0;
+}
 .baohanh .top {
     display: flex;
     border-bottom: 1px solid #ddd;
@@ -129,9 +132,12 @@
 .chi-tiet-gia p {
     margin: 5px 0; 
 }
+.chi-tiet-gia p a {
+    color: #1877F2;
+} 
 .chi-tiet-gia a {
     text-decoration: none; 
-    color: white;
+    color:#ffffff;
 }
 
 .chi-tiet-gia h5 {
