@@ -156,7 +156,7 @@ let closeShopping = document.querySelector('.closeShopping');
 window.addEventListener('scroll', function() {
     var element = document.querySelector('.shopping');
 
-    if (window.scrollY > 100) { // Chuyển sang kiểu fixed sau khi cuộn xuống 300px
+    if (window.scrollY > 100) { // Chuyển sang kiểu fixed sau khi cuộn xuống 100px
         element.style.position = 'fixed';
         element.style.top = '30px';
         element.style.right = '0';
